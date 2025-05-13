@@ -9,6 +9,10 @@ Array::Array(const int size) {
     count = 0;
 }
 
+Array::~Array() {
+    delete[] myArr;
+}
+
 void Array::insert(const int value) {
     if (count == capacity) {
         int newCapacity = capacity * 2;
@@ -52,3 +56,5 @@ void Array::print() const {
         cout << myArr[i] << " ";
     }
 }
+
+

@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Algorithms main.cpp
         Array.cpp
-        Array.h)
+        Array.h
+        LinkedList.cpp
+        LinkedList.h)

@@ -9,6 +9,7 @@ private:
     int count;
 public:
     Array(int size);
+    ~Array();
     void insert(int value);
     void removeAt(int index);
     int findIndexOf(int value) const;
