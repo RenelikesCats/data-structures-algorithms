@@ -22,6 +22,7 @@ public:
     void addLast(int item);
     void addFirst(int item);
     int indexOf(int item) const;
+    bool contains(int item) const;
     void printList() const;
     ~LinkedList();
 

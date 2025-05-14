@@ -39,6 +39,10 @@ int main() {
     linked_list->addFirst(30);
 
     cout << linked_list->indexOf(30) << endl; // output: 0
+
+    cout << linked_list->contains(10) << endl; // output: 1 aka true
+    cout << linked_list->contains(90) << endl; //output: 0 aka false
+
     linked_list->printList(); // output: 30 10 20
 
     delete linked_list;

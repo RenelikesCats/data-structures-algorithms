@@ -47,7 +47,7 @@ void LinkedList::addFirst(const int item) {
 
 int LinkedList::indexOf(const int item) const {
     int index = 0;
-    const Node* current = head;
+    const Node *current = head;
     while (current != nullptr) {
         if (current->value == item) {
             return index;
@@ -58,6 +58,9 @@ int LinkedList::indexOf(const int item) const {
     return -1;
 }
 
+bool LinkedList::contains(const int item) const {
+    return indexOf(item) != -1;
+}
 
 void LinkedList::printList() const {
     Node *current = head;
