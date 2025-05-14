@@ -23,6 +23,7 @@ public:
     void addFirst(int item);
     int indexOf(int item) const;
     bool contains(int item) const;
+    void removeFirst();
     void printList() const;
     ~LinkedList();
 

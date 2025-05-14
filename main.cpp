@@ -34,7 +34,9 @@ int main() {
 
     LinkedList *linked_list = new LinkedList();
 
+
     linked_list->addLast(10);
+
     linked_list->addLast(20);
     linked_list->addFirst(30);
 
@@ -44,6 +46,11 @@ int main() {
     cout << linked_list->contains(90) << endl; //output: 0 aka false
 
     linked_list->printList(); // output: 30 10 20
+
+    linked_list->removeFirst(); // removes first element: 30
+
+    linked_list->printList(); // output: 10 20
+
 
     delete linked_list;
     linked_list = nullptr;

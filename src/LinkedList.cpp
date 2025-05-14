@@ -62,6 +62,20 @@ bool LinkedList::contains(const int item) const {
     return indexOf(item) != -1;
 }
 
+void LinkedList::removeFirst() {
+    if (head == nullptr) {
+        throw std::invalid_argument("List is empty");
+    }
+    Node *temp = head;
+    head = head->next;
+
+    delete temp;
+
+    if (head == nullptr) {
+        tail = nullptr;
+    }
+}
+
 void LinkedList::printList() const {
     Node *current = head;
     while (current != nullptr) {
