@@ -17,7 +17,7 @@ The primary goal of this project is to solidify my understanding of fundamental 
 
 ## Done so far: 
 * **Data structures**:
-    * **Arrays**:  implementation of dynamic resizing list. See `Array.h` and related cpp file `Array.cpp` files for details. The current implementation supports:
+    * **Arrays**:  implementation of dynamic resizing list. See `include/Array.h` and related cpp file `src/Array.cpp` files for details. The implementation supports:
         * Dynamic resizing upon insertion when capacity is reached.
         * Inserting new elements.
         * Removing elements at a specific index with bounds checking.
@@ -25,4 +25,8 @@ The primary goal of this project is to solidify my understanding of fundamental 
         * Retrieving the current length of the array.
         * Printing the elements of the array.
 
-   * **Linked list**: See `LinkedList.h` and related cpp file `LinkedList.cpp` files for details.
+   * **Linked list**: See `include/LinkedList.h` and related cpp file `src/LinkedList.cpp` files for details. The implementation supports:
+     * Adding to the Front: Inserts a new item at the beginning of the list.
+     * Adding to the End: Appends a new item to the end of the list.
+     * Finding an Item's Position: Returns the index (position) of the first occurrence of a given item in the list or returns -1 if the item is not found.
+     * Showing the List: Prints all the items in the list to the console.
