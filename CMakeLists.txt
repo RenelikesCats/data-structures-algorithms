@@ -3,8 +3,10 @@ project(Algorithms)
 
 set(CMAKE_CXX_STANDARD 20)
 
+include_directories(include)
+
 add_executable(Algorithms main.cpp
-        Array.cpp
-        Array.h
-        LinkedList.cpp
-        LinkedList.h)
+        src/Array.cpp
+        include/Array.h
+        src/LinkedList.cpp
+        include/LinkedList.h)

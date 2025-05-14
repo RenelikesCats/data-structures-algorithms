@@ -1,5 +1,5 @@
 #include <iostream>
-#include "LinkedList.h"
+#include "../include/LinkedList.h"
 
 using std::cout;
 using std::endl;
@@ -45,6 +45,20 @@ void LinkedList::addFirst(const int item) {
     }
 }
 
+int LinkedList::indexOf(const int item) const {
+    int index = 0;
+    const Node* current = head;
+    while (current != nullptr) {
+        if (current->value == item) {
+            return index;
+        }
+        current = current->next;
+        index++;
+    }
+    return -1;
+}
+
+
 void LinkedList::printList() const {
     Node *current = head;
     while (current != nullptr) {
@@ -53,4 +67,3 @@ void LinkedList::printList() const {
     }
     cout << endl;
 }
-

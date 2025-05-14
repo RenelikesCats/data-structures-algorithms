@@ -1,9 +1,9 @@
 #include <iostream>
-
 #include "LinkedList.h"
+#include "include/Array.h"
 
 using namespace std;
-#include "Array.h";
+
 
 int main() {
     cout << "Array: " << endl;
@@ -38,7 +38,7 @@ int main() {
     linked_list->addLast(20);
     linked_list->addFirst(30);
 
-
+    cout << linked_list->indexOf(30) << endl; // output: 0
     linked_list->printList(); // output: 30 10 20
 
     delete linked_list;
