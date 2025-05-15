@@ -11,11 +11,12 @@ The primary goal of this project is to solidify my understanding of fundamental 
     * Queues
     * Trees (Binary Trees, Binary Search Trees)
 * ### Algorithms:
-    * Sorting Algorithms (e.g., Bubble Sort, Insertion Sort, Quick Sort)
+    * Sorting Algorithms:✅
+      * Bubble sort✅
     * Searching Algorithms (e.g., Linear Search, Binary Search)
     * Dynamic Programming examples
 
-## Done so far: 
+## Overwiew: 
 * **Data structures**:
     * **Arrays**:  implementation of dynamic resizing list. See `include/Array.h` and related cpp file `src/Array.cpp` files for details. The implementation supports:
         * Dynamic resizing upon insertion when capacity is reached.
