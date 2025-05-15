@@ -9,4 +9,6 @@ add_executable(Algorithms main.cpp
         src/Array.cpp
         include/Array.h
         src/LinkedList.cpp
-        include/LinkedList.h)
+        include/LinkedList.h
+        src/Sort.cpp
+        include/Sort.h)
